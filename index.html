@@ -7,7 +7,9 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="src/css/bootstrap-theme.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -15,13 +17,83 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css" media="screen">
+      html,body,header{
+        height:100%;
+      }
+      video {
+        border:1px solid #00f;
+        width:100%;
+        height:100%;
+        margin:0 auto;
+        text-align:center;
+        z-index: 1;
+        object-fit: cover;
+        clear: both;
+        overflow: auto;
+        display: block;
+        clear: both;
+        background: url(bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: bottom center;
+        -webkit-transition: 1s opacity;
+        transition: 1s opacity;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top" style="opacity:0.8">
+        <div class="navbar-header">
+          <button data-toggle="collapse" data-target="#navbar" class="navbar-toggle" type="button">
+            <span class="sr-only">Toggle</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Brand</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Page 1</a>
+            </li>
+            <li>
+              <a href="#">Page 2</a>
+            </li>
+            <li>
+              <a href="#">Page 3</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="cover" class="container-fluid" style="position:fixed;object-fit: cover;background-size: cover;background:url('bg.jpg') #000 center center;width:100%;height:100%;padding:0">
+        <video id="video" loop style="display:none">
+          <source src="walk.mp4" type="video/mp4"></source>
+        </video>
+      </div>
+    </header>
+    <section style="position:relative;top:1200px;height:500px;background:#f00;padding:0;display:block;z-index:999;">
+    test
+    </section>
+    <section style="position:relative;top:0px;height:500px;background:#0f0;padding:0;display:block;z-index:999;">
+    test
+    </section>
+    <section style="height:500px;background:#000;padding:0;display:block;z-index:999;">
+    test
+    </section>
+    <section style="height:500px;background:#000;padding:0;display:block;z-index:999;">
+    test
+    </section>
+    <section style="height:500px;background:#000;padding:0;display:block;z-index:999;">
+    test
+    </section>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="src/js/bootstrap.min.js"></script>
   </body>
 </html>
