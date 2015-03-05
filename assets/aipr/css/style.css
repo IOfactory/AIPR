@@ -152,6 +152,10 @@ header > video{
 #publications{
   background: #545454;
 }
+#contact{
+  color: #fff;
+  background: #545454;
+}
 /*
 #publications hr{
   margin: 10px 0 30px 10px;
