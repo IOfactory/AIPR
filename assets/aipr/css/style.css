@@ -175,3 +175,6 @@ header > video{
     background: #888;
     color: #262524;
 }
+.owl-theme .owl-controls .owl-page span{
+  background: #b4cac2;
+}
